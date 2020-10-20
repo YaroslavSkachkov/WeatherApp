@@ -7,19 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C44553AA253F703D00FAAC3F /* CitiesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44553A9253F703D00FAAC3F /* CitiesTableViewController.swift */; };
+		C44553AD253F71B800FAAC3F /* WAErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44553AC253F71B800FAAC3F /* WAErrors.swift */; };
 		C4F888F7253F67F30098C5F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F888F6253F67F30098C5F5 /* AppDelegate.swift */; };
 		C4F888F9253F67F30098C5F5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F888F8253F67F30098C5F5 /* SceneDelegate.swift */; };
-		C4F888FB253F67F30098C5F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F888FA253F67F30098C5F5 /* ViewController.swift */; };
+		C4F888FB253F67F30098C5F5 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F888FA253F67F30098C5F5 /* LoginVC.swift */; };
 		C4F888FE253F67F30098C5F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4F888FC253F67F30098C5F5 /* Main.storyboard */; };
 		C4F88900253F67F40098C5F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4F888FF253F67F40098C5F5 /* Assets.xcassets */; };
 		C4F88903253F67F40098C5F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4F88901253F67F40098C5F5 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C44553A9253F703D00FAAC3F /* CitiesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesTableViewController.swift; sourceTree = "<group>"; };
+		C44553AC253F71B800FAAC3F /* WAErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WAErrors.swift; sourceTree = "<group>"; };
 		C4F888F3253F67F30098C5F5 /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4F888F6253F67F30098C5F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4F888F8253F67F30098C5F5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C4F888FA253F67F30098C5F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C4F888FA253F67F30098C5F5 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		C4F888FD253F67F30098C5F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C4F888FF253F67F40098C5F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4F88902253F67F40098C5F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,7 +62,9 @@
 			children = (
 				C4F888F6253F67F30098C5F5 /* AppDelegate.swift */,
 				C4F888F8253F67F30098C5F5 /* SceneDelegate.swift */,
-				C4F888FA253F67F30098C5F5 /* ViewController.swift */,
+				C44553AC253F71B800FAAC3F /* WAErrors.swift */,
+				C4F888FA253F67F30098C5F5 /* LoginVC.swift */,
+				C44553A9253F703D00FAAC3F /* CitiesTableViewController.swift */,
 				C4F888FC253F67F30098C5F5 /* Main.storyboard */,
 				C4F888FF253F67F40098C5F5 /* Assets.xcassets */,
 				C4F88901253F67F40098C5F5 /* LaunchScreen.storyboard */,
@@ -137,8 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4F888FB253F67F30098C5F5 /* ViewController.swift in Sources */,
+				C4F888FB253F67F30098C5F5 /* LoginVC.swift in Sources */,
+				C44553AD253F71B800FAAC3F /* WAErrors.swift in Sources */,
 				C4F888F7253F67F30098C5F5 /* AppDelegate.swift in Sources */,
+				C44553AA253F703D00FAAC3F /* CitiesTableViewController.swift in Sources */,
 				C4F888F9253F67F30098C5F5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +297,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4ASZ4Y47T7;
 				INFOPLIST_FILE = WeatherApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +305,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = yar.WeatherApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -308,6 +317,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4ASZ4Y47T7;
 				INFOPLIST_FILE = WeatherApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +325,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = yar.WeatherApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
