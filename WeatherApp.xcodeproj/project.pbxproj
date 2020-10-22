@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C40F86232541B2A900469053 /* InfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40F86222541B2A800469053 /* InfoModel.swift */; };
+		C40F86272541B3AE00469053 /* CityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40F86252541B3AE00469053 /* CityCell.swift */; };
+		C40F86282541B3AE00469053 /* CityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C40F86262541B3AE00469053 /* CityCell.xib */; };
+		C40F862B2541B6F700469053 /* ModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40F862A2541B6F700469053 /* ModelManager.swift */; };
 		C44553AA253F703D00FAAC3F /* CitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44553A9253F703D00FAAC3F /* CitiesViewController.swift */; };
 		C44553AD253F71B800FAAC3F /* WAErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44553AC253F71B800FAAC3F /* WAErrors.swift */; };
 		C4654AAA25418ADE0006EB9B /* Cities.json in Resources */ = {isa = PBXBuildFile; fileRef = C4654AA925418ADE0006EB9B /* Cities.json */; };
@@ -19,6 +23,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C40F86222541B2A800469053 /* InfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoModel.swift; sourceTree = "<group>"; };
+		C40F86252541B3AE00469053 /* CityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCell.swift; sourceTree = "<group>"; };
+		C40F86262541B3AE00469053 /* CityCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CityCell.xib; sourceTree = "<group>"; };
+		C40F862A2541B6F700469053 /* ModelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelManager.swift; sourceTree = "<group>"; };
 		C44553A9253F703D00FAAC3F /* CitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesViewController.swift; sourceTree = "<group>"; };
 		C44553AC253F71B800FAAC3F /* WAErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WAErrors.swift; sourceTree = "<group>"; };
 		C4654AA925418ADE0006EB9B /* Cities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Cities.json; sourceTree = "<group>"; };
@@ -67,6 +75,10 @@
 				C44553AC253F71B800FAAC3F /* WAErrors.swift */,
 				C4F888FA253F67F30098C5F5 /* LoginVC.swift */,
 				C44553A9253F703D00FAAC3F /* CitiesViewController.swift */,
+				C40F86252541B3AE00469053 /* CityCell.swift */,
+				C40F86262541B3AE00469053 /* CityCell.xib */,
+				C40F86222541B2A800469053 /* InfoModel.swift */,
+				C40F862A2541B6F700469053 /* ModelManager.swift */,
 				C4F888FC253F67F30098C5F5 /* Main.storyboard */,
 				C4654AA925418ADE0006EB9B /* Cities.json */,
 				C4F888FF253F67F40098C5F5 /* Assets.xcassets */,
@@ -134,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4654AAA25418ADE0006EB9B /* Cities.json in Resources */,
+				C40F86282541B3AE00469053 /* CityCell.xib in Resources */,
 				C4F88903253F67F40098C5F5 /* LaunchScreen.storyboard in Resources */,
 				C4F88900253F67F40098C5F5 /* Assets.xcassets in Resources */,
 				C4F888FE253F67F30098C5F5 /* Main.storyboard in Resources */,
@@ -148,10 +161,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4F888FB253F67F30098C5F5 /* LoginVC.swift in Sources */,
+				C40F862B2541B6F700469053 /* ModelManager.swift in Sources */,
 				C44553AD253F71B800FAAC3F /* WAErrors.swift in Sources */,
 				C4F888F7253F67F30098C5F5 /* AppDelegate.swift in Sources */,
 				C44553AA253F703D00FAAC3F /* CitiesViewController.swift in Sources */,
 				C4F888F9253F67F30098C5F5 /* SceneDelegate.swift in Sources */,
+				C40F86272541B3AE00469053 /* CityCell.swift in Sources */,
+				C40F86232541B2A900469053 /* InfoModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

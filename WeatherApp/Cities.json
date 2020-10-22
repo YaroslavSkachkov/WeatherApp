@@ -1,6 +1,6 @@
 {
     "cod": "200",
-    "cities_list": [
+    "cities": [
         {
             "name": "Minsk",
             "country": "BY",
