@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import RealmSwift
 
 struct WeatherModel: Codable {
     var coord: Coordinates?
@@ -84,21 +85,20 @@ struct Sys: Codable {
     var sunset: Double?
 }
 
-//struct CityModel: Codable {
-//    var id: Int?
-//    var name: String?
-//    var coord: Coordinates?
-//    var country: String?
-//    var population: Int?
-//    var timezone: Int?
-//    var sunrise: Double?
-//    var sunset: Double?
-//}
-
 struct Rain: Codable {
     
 }
 
 struct Snow: Codable {
     
+}
+
+class WeatherRealmModel: Object {
+    @objc dynamic var city: String = ""
+    @objc dynamic var temp: Double = 0.0
+    @objc dynamic var desc: String = ""
+    
+    override class func primaryKey() -> String? {
+        return "city"
+    }
 }

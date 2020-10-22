@@ -14,11 +14,14 @@ class CitiesViewController: UIViewController {
     
     let modelManager: ModelManager = ModelManager()
     let networkManager: NetworkManager = NetworkManager(apiKey: "eba47effea88b18d5b67eae531209447")
+    
     var cities: [City] = []
+    var weatherRealmModels: [WeatherRealmModel] = []
     var descriptionTVText: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        weatherRealmModels = DatabaseManager.sharedInstance.getWeatherModels()
         self.navigationItem.hidesBackButton = true
         citiesTable.delegate = self
         citiesTable.dataSource = self
@@ -84,10 +87,18 @@ extension CitiesViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let city: City = cities[indexPath.row]
-        networkManager.requestWeatherForLocation(city: city.name, country: city.country) { [weak self] in
-            self?.descriptionTV.text = "\(city.desc). Current temperature: \($0.main?.temp ?? 0.0). About weather: \($0.weather[0]?.desc ?? "*description_not_found*")"
+        if weatherRealmModels.isEmpty || !weatherRealmModels.contains(where: { $0.city == city.name }) {
+            networkManager.requestWeatherForLocation(city: city.name, country: city.country) { [weak self] in
+                if let weatherModel = $0 {
+                    self?.descriptionTV.text = "\(city.desc) Current temperature: \(weatherModel.main?.temp ?? 0.0) ℃. About weather: \(weatherModel.weather[0]?.desc ?? "")."
+                } else {
+                    self?.descriptionTV.text = city.desc
+                }
+            }
+        } else {
+            let weatherModel = weatherRealmModels.filter { $0.city == city.name}[0]
+            descriptionTV.text = "\(city.desc) Current temperature: \(weatherModel.temp) ℃. About weather: \(weatherModel.desc)."
         }
-        descriptionTV.text = city.desc
         tableView.deselectRow(at: indexPath, animated: true)
     }
     

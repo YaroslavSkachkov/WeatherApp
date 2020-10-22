@@ -16,6 +16,9 @@ enum WAError: Error {
     case emptyBoth
 }
 
+func printError(_ error: Error) {
+    print("[\(Date())][WeatherApp][Internal error][\(error.localizedDescription)]")
+}
 
 extension WAError: LocalizedError {
     public var errorDescription: String? {
