@@ -55,6 +55,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C4728BFF2542025200ACFA53 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C40F86222541B2A800469053 /* InfoModel.swift */,
+				C4728BF92541F77A00ACFA53 /* WeatherModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C4728C002542027500ACFA53 /* Visualisation */ = {
+			isa = PBXGroup;
+			children = (
+				C40F86262541B3AE00469053 /* CityCell.xib */,
+				C4F888FC253F67F30098C5F5 /* Main.storyboard */,
+			);
+			path = Visualisation;
+			sourceTree = "<group>";
+		};
+		C4728C01254202E800ACFA53 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C4728BFC2541F7EB00ACFA53 /* NetworkManager.swift */,
+				C40F862A2541B6F700469053 /* ModelManager.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		C4F888EA253F67F20098C5F5 = {
 			isa = PBXGroup;
 			children = (
@@ -78,14 +105,11 @@
 				C4F888F8253F67F30098C5F5 /* SceneDelegate.swift */,
 				C44553AC253F71B800FAAC3F /* WAErrors.swift */,
 				C4F888FA253F67F30098C5F5 /* LoginVC.swift */,
-				C4728BFC2541F7EB00ACFA53 /* NetworkManager.swift */,
 				C44553A9253F703D00FAAC3F /* CitiesViewController.swift */,
 				C40F86252541B3AE00469053 /* CityCell.swift */,
-				C40F86262541B3AE00469053 /* CityCell.xib */,
-				C40F86222541B2A800469053 /* InfoModel.swift */,
-				C4728BF92541F77A00ACFA53 /* WeatherModel.swift */,
-				C40F862A2541B6F700469053 /* ModelManager.swift */,
-				C4F888FC253F67F30098C5F5 /* Main.storyboard */,
+				C4728C01254202E800ACFA53 /* Utils */,
+				C4728C002542027500ACFA53 /* Visualisation */,
+				C4728BFF2542025200ACFA53 /* Models */,
 				C4654AA925418ADE0006EB9B /* Cities.json */,
 				C4F888FF253F67F40098C5F5 /* Assets.xcassets */,
 				C4F88901253F67F40098C5F5 /* LaunchScreen.storyboard */,
