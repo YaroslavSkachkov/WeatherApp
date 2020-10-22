@@ -81,7 +81,7 @@
         <!--Cities View Controller-->
         <scene sceneID="ete-ml-GAR">
             <objects>
-                <viewController id="mch-Ls-98d" customClass="CitiesViewController" customModule="WeatherApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CitiesVC" id="mch-Ls-98d" customClass="CitiesViewController" customModule="WeatherApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rzX-gs-Ji7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -25,8 +25,8 @@ class LoginVC: UIViewController {
     @IBAction func loginButonTapped(_ sender: Any) {
         checkUserData(eMail: eMailTF.text, password: passwordTF.text) { isValid in
             if isValid {
-                let citiesVC = CitiesViewController()
-                self.navigationController?.pushViewController(citiesVC, animated: true)
+                let citiesVC = self.storyboard?.instantiateViewController(withIdentifier: "CitiesVC")
+                self.navigationController?.pushViewController(citiesVC!, animated: true)
             }
         }
     }

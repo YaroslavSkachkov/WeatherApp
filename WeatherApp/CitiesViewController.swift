@@ -13,6 +13,7 @@ class CitiesViewController: UIViewController {
     @IBOutlet weak var citiesTable: UITableView!
     
     let modelManager: ModelManager = ModelManager()
+    let networkManager: NetworkManager = NetworkManager(apiKey: "eba47effea88b18d5b67eae531209447")
     var cities: [City] = []
     var descriptionTVText: String = ""
     
@@ -82,7 +83,11 @@ extension CitiesViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        descriptionTV.text = cities[indexPath.row].desc
+        let city: City = cities[indexPath.row]
+        networkManager.requestWeatherForLocation(city: city.name, country: city.country) { [weak self] in
+            self?.descriptionTV.text = "\(city.desc). Current temperature: \($0.main?.temp ?? 0.0). About weather: \($0.weather[0]?.desc ?? "*description_not_found*")"
+        }
+        descriptionTV.text = city.desc
         tableView.deselectRow(at: indexPath, animated: true)
     }
     
