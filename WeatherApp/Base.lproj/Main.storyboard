@@ -78,6 +78,45 @@
             </objects>
             <point key="canvasLocation" x="1050.7246376811595" y="76.339285714285708"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="ete-ml-GAR">
+            <objects>
+                <viewController id="mch-Ls-98d" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rzX-gs-Ji7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1tA-h0-ePy">
+                                <rect key="frame" x="4" y="44" width="406" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cc9-LM-nne">
+                                <rect key="frame" x="4" y="176" width="406" height="686"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jnc-C8-Q8X"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1tA-h0-ePy" firstAttribute="leading" secondItem="jnc-C8-Q8X" secondAttribute="leading" constant="4" id="3lE-jH-in5"/>
+                            <constraint firstItem="jnc-C8-Q8X" firstAttribute="trailing" secondItem="1tA-h0-ePy" secondAttribute="trailing" constant="4" id="6Vm-uh-Ub8"/>
+                            <constraint firstItem="cc9-LM-nne" firstAttribute="leading" secondItem="jnc-C8-Q8X" secondAttribute="leading" constant="4" id="7NO-Kd-eAe"/>
+                            <constraint firstItem="1tA-h0-ePy" firstAttribute="height" secondItem="rzX-gs-Ji7" secondAttribute="height" multiplier="0.142857" id="Ke3-HI-2g7"/>
+                            <constraint firstItem="cc9-LM-nne" firstAttribute="top" secondItem="1tA-h0-ePy" secondAttribute="bottom" constant="4" id="YWR-Ts-8tQ"/>
+                            <constraint firstItem="1tA-h0-ePy" firstAttribute="top" secondItem="jnc-C8-Q8X" secondAttribute="top" id="ksb-B1-E2C"/>
+                            <constraint firstItem="cc9-LM-nne" firstAttribute="bottom" secondItem="jnc-C8-Q8X" secondAttribute="bottom" id="ptn-DN-QGl"/>
+                            <constraint firstItem="jnc-C8-Q8X" firstAttribute="trailing" secondItem="cc9-LM-nne" secondAttribute="trailing" constant="4" id="qOG-gp-McB"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZUm-O1-YR9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2405.7971014492755" y="75.669642857142847"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="xhD-rI-8jW">
             <objects>
@@ -98,6 +137,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
