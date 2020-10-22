@@ -1,0 +1,55 @@
+{
+    "cod": "200",
+    "cities_list": [
+        {
+            "name": "Minsk",
+            "country": "BY",
+            "desc": "Minsk is the capital and the largest city of Belarus, located on the Svislač and the Nyamiha Rivers. As the capital, Minsk has a special administrative status in Belarus and is the administrative centre of Minsk Region (voblasć) and Minsk District (rajon)."
+        },
+        {
+            "name": "Berlin",
+            "country": "DE",
+            "desc": "Today, Germany is a federal parliamentary republic led by a chancellor. With over 83 million inhabitants of its 16 constituent states, it is the second-most populous country in Europe after Russia, as well as the most populous member state of the European Union. Its capital and largest city is Berlin, and its financial centre is Frankfurt; the largest urban area is the Ruhr."
+        },
+        {
+            "name": "Vilnius",
+            "country": "LT",
+            "desc": "Vilnius is classified as a Gamma global city according to GaWC studies,[13] and is known for the architecture in its Old Town, declared a UNESCO World Heritage Site in 1994."
+        },
+        {
+            "name": "Warsaw",
+            "country": "PL",
+            "desc": "Warsaw's name in the Polish language is Warszawa. Other previous spellings of the name may have included Warszewa, Warszowa, Worszewa or Werszewa."
+        },
+        {
+            "name": "Kyiv",
+            "country": "UA",
+            "desc": "Kyiv or Kiev is the capital and most populous city of Ukraine."
+        },
+        {
+            "name": "Moscow",
+            "country": "RU",
+            "desc": "Moscow is the capital and largest city of Russia."
+        },
+        {
+            "name": "London",
+            "country": "GB",
+            "desc": "London is the capital and largest city of England and the United Kingdom."
+        },
+        {
+            "name": "Madrid",
+            "country": "ES",
+            "desc": "Madrid is the capital and most-populous city of Spain. The city has almost 3.3 million inhabitants and a metropolitan area population of approximately 6.5 million."
+        },
+        {
+            "name": "Paris",
+            "country": "FR",
+            "desc": "Paris is the capital and most populous city of France, with an estimated population of 2,148,271 residents as of 2020, in an area of 105 square kilometres (41 square miles)."
+        },
+        {
+            "name": "Rome",
+            "country": "IT",
+            "desc": "Rome is the capital city and a special comune of Italy (named Comune di Roma Capitale) as well as the capital of the Lazio region."
+        }
+    ]
+}
