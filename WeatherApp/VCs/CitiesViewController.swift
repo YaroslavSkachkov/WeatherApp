@@ -87,6 +87,7 @@ extension CitiesViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let city: City = cities[indexPath.row]
+        weatherRealmModels = DatabaseManager.sharedInstance.getWeatherModels()
         let realmContainsModel = weatherRealmModels.contains(where: { $0.city == city.name })
         if weatherRealmModels.isEmpty || !realmContainsModel {
             networkManager.requestWeatherForLocation(city: city.name, country: city.country) { [weak self] in
