@@ -47,7 +47,7 @@ class NetworkManager {
     }
     
     private func stopRequests() {
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(invalidateTimer), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 3600, target: self, selector: #selector(invalidateTimer), userInfo: nil, repeats: true)
     }
     
     @objc private func invalidateTimer() {
