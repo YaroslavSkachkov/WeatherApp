@@ -87,11 +87,12 @@ extension CitiesViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let city: City = cities[indexPath.row]
-        if weatherRealmModels.isEmpty || !weatherRealmModels.contains(where: { $0.city == city.name }) {
+        let realmContainsModel = weatherRealmModels.contains(where: { $0.city == city.name })
+        if weatherRealmModels.isEmpty || !realmContainsModel {
             networkManager.requestWeatherForLocation(city: city.name, country: city.country) { [weak self] in
                 if let weatherModel = $0 {
                     self?.descriptionTV.text = "\(city.desc) Current temperature: \(weatherModel.main?.temp ?? 0.0) ℃. About weather: \(weatherModel.weather[0]?.desc ?? "")."
-                } else {
+                } else if $0 == nil && !realmContainsModel {
                     self?.descriptionTV.text = city.desc
                 }
             }
